@@ -16,19 +16,18 @@ with open(os.path.join(_here, 'instagram_dl', 'version.py')) as f:
     exec(f.read(), version)
 
 setup(
-    name='instagram_dl',
+    name='instapydl',
     version=version['__version__'],
     description=('Show how to structure a Python project.'),
     long_description=long_description,
-    author='Bruce Wayne',
+    author='Quarterwire',
     author_email='quarterwire@outlook.com',
     url='https://github.com/quarterwire/instagram_dl/',
     license='MIL',
-    packages=['instagram_dl'],
+    packages=['instapydl'],
     include_package_data=True,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Science/Research',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.6'],
+        'Programming Language :: Python :: 3.8'],
     )

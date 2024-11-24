@@ -1,5 +1,5 @@
 from .version import __version__
-from .add import Reel
+from .src import Reel
 
 __all__ = [
     'Reel',

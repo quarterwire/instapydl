@@ -1,51 +1,7 @@
-Instagram-DL
+InstaPY
 ===========
 
 A simple package to download videos, and reels from Instagram. Easily save public content or your own account data by providing the post URL.
-
-
-Split your code into packages, modules, and functions
------------------------------------------------------
-
-- All code should be inside some function (except perhaps ``if __name__ == '__main__':``).
-- Split long functions into smaller functions.
-- If you need to scroll through a function over several screens, it is probably too long.
-- Functions should do one thing and one thing only.
-- Hide internals with underscores.
-- Organize related functions into modules.
-- If modules grow too large, split them.
-- Import from other modules under ``somepackage/`` using ``from .somemodule import something``.
-- Do file I/O on the "outside" of your code, not deep inside.
-
-
-Classes vs. functions
----------------------
-
-- Do not overuse classes.
-- Prefer immutable data structures.
-- Prefer pure functions.
-
-
-Naming
-------
-
-- Give the subdirectory the same name as your package.
-- Before you name your package, check that the name is not taken on https://pypi.org
-  (you may want to upload your package to PyPI one day).
-
-
-Interfaces
-----------
-
-- In ``somepackage/__init__.py`` define what should be visible to the outside.
-- Use https://semver.org.
-
-
-Testing
--------
-
-- Test all non-trivial code. I recommend to use https://pytest.org.
-- Use Travis CI: https://docs.travis-ci.com/user/languages/python/.
 
 
 Dependency management

@@ -4,16 +4,15 @@ language:
   - python
 
 python:
-  - 2.7
-  - 3.6
+  - 3.8
 
 install:
   - pip install -r requirements.txt
 
 script:
-  - pycodestyle somepackage
-  - pytest --verbose --capture=no somepackage
+  - pycodestyle instapy
+  - pytest --verbose --capture=no instapy
   - pip install .
 
 notifications:
-  email: false
+  email: quarterwire@outlook.com
