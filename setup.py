@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 version = {}
-with open(os.path.join(_here, 'instagram_dl', 'version.py')) as f:
+with open(os.path.join(_here, 'instapydl', 'version.py')) as f:
     exec(f.read(), version)
 
 setup(
