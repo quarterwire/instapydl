@@ -1,6 +1,6 @@
 # InstaPYDL
 
-A Python package for downloading Instagram Reels and retrieving metadata. With **InstagramDL**, you can validate Instagram Reel URLs, extract metadata, and download videos easily.
+A Python package for downloading Instagram Reels and retrieving metadata. With **InstaPYDL**, you can validate Instagram Reel URLs, extract metadata, and download videos easily.
 
 ---
 
