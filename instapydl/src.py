@@ -4,6 +4,7 @@ import re
 import pathlib
 from typing import Dict
 from urllib.parse import quote
+from io import BytesIO
 
 INSTAGRAM_DOCUMENT_ID = "8845758582119845" #constant ID used for identifying instagram posts via shortcodes.
 
@@ -98,3 +99,19 @@ class Reel:
                 print(f"Download successful! File saved as {path}")
             else:
                 print(f"Failed to download file. Status code: {response.status_code}")
+                
+    def get_bytes(self):
+        """Returns the content of a reel as bytes using BytesIO
+        Mainly useful for discord integration - discord.File()"""
+        metadata = self.scrape_post()
+        video_url = metadata["video_url"]
+        
+        with httpx.Client() as client:
+            try:
+                res = client.get(video_url)
+                res.raise_for_status()
+                byte = BytesIO(res.content)
+                return byte
+            except httpx.RequestError as e:
+                raise InstagramDL_UnknownException(e)
+                
