@@ -1,3 +1,3 @@
+import instapydl
 
-
-print(Reel("https://www.instagram.com/reels/C7piY-jhaj5").download())
+print(instapydl.Reel("https://www.instagram.com/reedls/C7piY-jhaj5").download())
